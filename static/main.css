@@ -1,0 +1,54 @@
+body {
+    font-family:helvetica;
+    font-weight:lighter;
+}
+
+#main-photo {
+    max-width:100%;
+    height:auto;
+}
+
+#main-text {
+    position:absolute;
+    text-align:center;
+    transform: translate(-50%, -0%);
+    top:20%;
+    left:50%;
+    width:60%
+}
+#title{
+    position:relative;
+    font-size:6vw;
+}
+#secondary-text {
+    position:relative;
+    font-size:3vw;
+}
+
+#info-section,
+#schedule,
+#accomodations,
+#registry{
+    text-align:center;
+}
+
+h1 {
+    border-bottom:solid;
+    border-color:lightgrey;
+    border-width:thin;
+
+}
+li {
+    text-align:center;
+}
+@media (max-width: 1197px) and (min-width: 767px) {
+    #main-text { top:20%; }
+}
+@media (max-width: 767px) and (min-width: 481px) {
+    #main-text { top: 30%; }
+    #main-photo { margin-top:170px; }
+}
+@media (max-width: 480px) {
+    #main-text { top:27%; }
+    #main-photo { margin-top:170px; }
+}
