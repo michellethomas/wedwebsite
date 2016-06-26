@@ -3,12 +3,12 @@ body {
     font-weight:lighter;
 }
 
-#main-photo {
+.main-photo {
     max-width:100%;
     height:auto;
 }
 
-#main-text {
+.main-text {
     position:absolute;
     text-align:center;
     transform: translate(-50%, -0%);
@@ -24,11 +24,19 @@ body {
     position:relative;
     font-size:3vw;
 }
+.section {
+    margin-top:30px;
+}
+.registry-group {
+    margin-top:40px;
+    height:80px;
+}
 
 #info-section,
 #schedule,
 #accomodations,
-#registry{
+#registry,
+#santa_cruz{
     text-align:center;
 }
 
@@ -37,6 +45,9 @@ h1 {
     border-color:lightgrey;
     border-width:thin;
 
+}
+p {
+    text-align:center;
 }
 li {
     text-align:center;
