@@ -53,13 +53,13 @@ li {
     text-align:center;
 }
 @media (max-width: 1197px) and (min-width: 767px) {
-    #main-text { top:20%; }
+    .main-text { top:35%; }
 }
 @media (max-width: 767px) and (min-width: 481px) {
-    #main-text { top: 30%; }
-    #main-photo { margin-top:170px; }
+    .main-text { top: 40%; }
+    .main-photo { margin-top:220px; }
 }
 @media (max-width: 480px) {
-    #main-text { top:27%; }
-    #main-photo { margin-top:170px; }
+    .main-text { top:40%; }
+    .main-photo { margin-top:220px; }
 }
