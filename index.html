@@ -3,106 +3,226 @@
 <head>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="static/main.css">
+    <link rel="stylesheet" type="text/css" href="static/agency.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        var scroll_start = 0;
+        var startchange = $('#info');
+        var offset = startchange.offset();
+        if (startchange.length){
+            $(document).scroll(function() {
+                scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                    $(".page-scroll").css('color', '#000000');
+                    $(".navbar-default").css('background-color', '#ffffff');
+                } else {
+                    $('.page-scroll').css('color', '#ffffff');
+                    $(".navbar-default").css('background-color', 'transparent');
+                }
+            });
+        }
+    });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <nav class='navbar navbar-default navbar-fixed-top'>
-        <div id='container-fluid'>
-            <ul class='nav navbar-nav'>
-                <li><a href='#info-section'>Info</a></li>
-                <li><a href='#schedule'>Schedule</a></li>
-                <li><a href='#accomodations'>Accomodations</a></li>
-                <li><a href='#santa_cruz'>To Do in Santa Cruz</a></li>
-                <li><a href='#registry'>Registry</a></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#info-section">Info</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#schedule">Schedule</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#santa_cruz">To Do in Santa Cruz</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#registry">Registry</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </nav>
-    <div id="main-header">
-        <img class="main-photo" src="static/IMG_1275.JPG">
-        <div class="main-text">
-            <div id='title'>Colin & Michelle</div>
-            <div id="secondary-text">7.30.16 - Santa Cruz, CA</div>
+        <!-- /.container-fluid -->
+    </nav> 
+
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">Michelle & Colin</div>
+                <div class="intro-lead-in">7.30.2016 - Santa Cruz</div>
+            </div>
         </div>
-    </div>
-    <div id="info-section" class="section col-md-12">
-        <h1>Ceremony & Reception</h1>
-        <h3>The Crepe Place</h3>
-        <div>1134 Soquel Ave
-        <br>Santa Cruz, CA
-        <br>July 30, 2016</div>
-        <br>
-    </div>
-    <div id="schedule" class="section col-md-12">
-        <h1>Schedule</h1>
-        <h2>Saturday</h2>
-        <div>Celebrate with us at the Crepe Place on Saturday!
-        <h4>Ceremony</h4>
-        4:00-5:00pm
-        <h4>Reception</h4>
-        5:00-10:00pm
-        </div>
-        <br>
-        <h2>Sunday</h2>
-        <div>Anytime after 10AM
-        <br>Stop by the beach house in Aptos and take a walk to the beach!
-        <br>248 Moosehead Dr.
-        <br>Aptos, CA</div>
-    </div>
-    <div></div>
-    <div id="accomodations" class="section col-md-12">
-        <h1>Accomodations</h1>
-        <h3>The Mission Inn</h3>
-        <div>
-        2250 Mission St, Santa Cruz, CA 95060</br>
-        We have a room block at the Mission Inn. It's a little bit of a drive from the venue, but the prices are reasonable and it's a nice hotel. </br>
-        Book directly with the hotel and tell them you're with the Thomas/Pollock wedding.</br>
-        It's a 10 -15 minute drive to The Crepe Place (2.7 miles).</br>
-        Here's the hotel website: http://www.mission-inn.com/
-        </div>
-    </div>
-    <div id="santa_cruz" class="section col-md-12">
-        <h1>Things to do in Santa Cruz</h1>
-        <div class="col-md-12">
-            <h2>Restaurants We Love</h2>
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
+    </header>
+
+    <!-- Info Section -->
+    <section id="info" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Info</h2>
+                    <h3 class="section-subheading text-muted">We can't wait to celebrate with everyone!</h3>
+                </div>
+            </div>
+            <div class="row text-center">
                 <div class="col-md-4">
-                    <h3>Cafe Brazil</h3>
-                    <p>We love Cafe Brazil, the wait can be long but it's worth it. Get an acai bowl!</p>
                 </div>
                 <div class="col-md-4">
-                    <h3>Zachary's</h3>
-                    <p>Zachary's is one of our favorite Santa Cruz breakfast spots.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>West End Tap Room</h3>
-                    <p>West End is a great restaurant for getting small bites and beer.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Mobo Sushi</h3>
-                    <p>Our favorite sushi in Santa Cruz, we've had several celebrations at Mobo.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Zoccolis</h3>
-                    <p>When the weather is nice, it's great to grab a sandwich and sit outside.</p>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">The Crepe Place</h4>
+                    <h4 class="service-heading">1134 Soquel Ave</h4>
+                    <h4 class="service-heading">Santa Cruz, CA</h4>
+                    <p class="text-muted">We're getting married!</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="registry" class="section col-md-12">
-        <h1>Registry</h1>
-        <div class="registry-group">
-            <a href="http://www.crateandbarrel.com/gift-registry/michelle-thomas-and-colin-pollock/r5528650">
-                <img border="0" src="http://images.crateandbarrel.com/is/image/Crate/WebsiteHeaderLogo?wid=295" width="295px" height="43px">
-            </a>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Schedule</h2>
+                    <h3 class="section-subheading text-muted">Come celebrate with us!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Saturday 4-5PM</h4>
+                                    <h4 class="subheading">Ceremony</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Join us at The Crepe Place while we get married out in the patio! 1134 Soquel Ave, Santa Cruz, CA</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Saturday 5-10PM</h4>
+                                    <h4 class="subheading">Reception</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">The party continues at the Crepe Place with dinner, games, and dancing!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Sunday 10AM+</h4>
+                                    <h4 class="subheading">Breakfast and Beach</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Come by and see the beach house anytime after 10AM. We'll have breakfast and will walk to the beach. 248 Moosehead Dr., Aptos, CA</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="section col-md-12"></div>
-    </br>
+    </section>
+
+    <section id="santa_cruz" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Things to do in Santa Cruz</h2>
+                    <h3 class="section-subheading text-muted">Some of our favorite things for you to check out on your trip</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-caption">
+                        <h4>Cafe Brazil</h4>
+                        <p class="text-muted">Brazilian Breakfast</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-caption">
+                        <h4>Zachary's</h4>
+                        <p class="text-muted">Amazing Basic Breakfast</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-caption">
+                        <h4>Zoccolis</h4>
+                        <p class="text-muted">Sandwiches!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-caption">
+                        <h4>West End Tap Room</h4>
+                        <p class="text-muted">Great dinner and beer</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-caption">
+                        <h4>West Cliff Ave</h4>
+                        <p class="text-muted">Walk along the cliff!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-caption">
+                        <h4>Boardwalk</h4>
+                        <p class="text-muted">Rides, games, and beach</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="registry">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Registry</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <a href="http://www.crateandbarrel.com/gift-registry/michelle-thomas-and-colin-pollock/r5528650">
+                    <img border="0" src="http://images.crateandbarrel.com/is/image/Crate/WebsiteHeaderLogo?wid=295" width="295px" height="43px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="section col-md-12">
-        <p>We're excited to celebrate with everyone!</p>
         <img class="main-photo" src="static/michelle_colin_santa_cruz.jpg">
     </div>
 

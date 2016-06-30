@@ -63,3 +63,7 @@ li {
     .main-text { top:40%; }
     .main-photo { margin-top:220px; }
 }
+
+.transparent {
+    background-color: rgba(231,231,231,0.5)
+}
